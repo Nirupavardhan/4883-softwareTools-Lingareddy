@@ -1,1 +1,31 @@
 
+digraph linkedlist {
+       // rankdir=LR;
+        node [shape=record,color=purple];
+        A [label="<back> | <data> 1 | <next>  "]
+        B [label="<back> | <data> 2 | <next>  "];
+        C [label="<back> | <data> 3 | <next>  "];
+        D  [label="<back> | <data> 4 | <next>  "];
+        E  [label="<back> | <data> 5 | <next>  "];
+        F  [label="<back> | <data> 6 | <next>  "];
+        G  [label="<back> | <data> 7 | <next>  "];
+    
+        null [];
+
+       A:back :data -> B:data [arrowhead=vee, arrowtail=dot, color=blue, dir =both,  tailclip=false];
+         A:next: data-> C:data [arrowhead=vee, arrowtail=dot, color=blue, dir= both, shape= vee,tailclip=false];
+          B:back :data -> D:data [arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+          B:next : data-> E:data [arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+           C:back:data -> F:data [arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+           C:next : data -> G:data [arrowhead=vee, arrowtail=dot, color=blue, dir= both, shape= vee,tailclip=false];
+           D:back: data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+            D:next : data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+             E:back: data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+              E:next:  data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+              F:back: data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+              F:next: data  -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+              G: back: data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+              G: next: data -> null[arrowhead=vee, arrowtail=dot, color=blue,dir= both, shape= vee,tailclip=false];
+           
+          
+}
