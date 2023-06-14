@@ -1,6 +1,7 @@
 # 4883-softwareTools
 
-NAME:-Nirupavardhan R Lingareddygari Email:-  nirupavardhan2424@gmail.com
+NAME:-Nirupavardhan R Lingareddygari 
+Email:-  nirupavardhan2424@gmail.com
 #Family Tree generation using python
 
 In the python Code we need to generate a dot file of Graphviz data
